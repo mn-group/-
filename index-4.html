@@ -18,7 +18,7 @@
         <script src="js/jquery.mobilemenu.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
         <script>
-        $(document).ready(function () {
+        $(document).ready(function(){
             $().UItoTop({ easingType: 'easeOutQuart' });
         });
         </script>
@@ -31,23 +31,22 @@
                 padding: 10px;
             }
 
-            /* Resim */
+            /* Resim için */
             .map img {
                 max-width: 300px;
                 height: auto;
-                margin: 20px auto; /* Ortalamak için */
-                display: block; /* Ortaya almak için */
+                margin: 20px auto;
+                display: block;
             }
 
-            /* Yazı hizalaması */
+            /* Adres kısmı */
             .map address {
                 font-size: 16px;
                 line-height: 1.8;
-                text-align: justify; /* Metni tam hizala */
+                text-align: center;
                 margin: 0 auto;
-                padding: 0 40px; /* Mobilde sağ ve sol boşluk */
-                max-width: 600px; /* Geniş ekranlar için sınırla */
-                color: #333; /* Yazı rengi */
+                padding: 0 40px;
+                max-width: 600px;
             }
 
             /* Sosyal medya ikonları */
@@ -57,33 +56,26 @@
                 gap: 20px;
                 margin-top: 20px;
             }
+
             .socials a img {
                 width: 50px;
                 height: 50px;
+                border-radius: 50%; /* Yuvarlatılmış ikonlar */
+                box-shadow: none; /* Arka plan gölgelerini kaldır */
                 transition: all 0.3s ease; /* Smooth hover efekti */
+                border: none; /* Çerçeveyi kaldır */
             }
+
             .socials a img:hover {
                 transform: scale(1.1); /* Hafif büyütme efekti */
                 filter: brightness(1.2); /* Daha parlak görünüm */
-            }
-
-            /* Footer */
-            footer .copy {
-                text-align: center;
-                font-size: 14px;
-                color: #777;
-                margin-top: 20px;
-            }
-            footer .copy a {
-                text-decoration: none;
-                color: #000;
             }
 
             /* Mobil uyumlu tasarım */
             @media (max-width: 767px) {
                 .content {
                     text-align: center;
-                    margin-top: 20px;
+                    margin-top: 50px;
                 }
                 .map img {
                     max-width: 90%; /* Mobilde daha geniş görünmesi için */
@@ -93,9 +85,30 @@
                     line-height: 1.5;
                     padding: 0 15px;
                 }
+                .socials {
+                    gap: 15px; /* Mobilde ikonlar arasında daha az boşluk */
+                }
                 .socials a img {
-                    width: 40px; /* Mobil için ikon boyutu küçültüldü */
+                    width: 40px; /* Mobilde daha küçük ikon boyutu */
                     height: 40px;
+                }
+            }
+
+            /* Masaüstü için optimize tasarım */
+            @media (min-width: 768px) {
+                .map img {
+                    max-width: 400px;
+                }
+                .map address {
+                    font-size: 18px;
+                    padding: 0 15px;
+                }
+                .socials a img {
+                    width: 65px; /* Masaüstü ikon boyutu */
+                    height: 60px;
+                }
+                .socials {
+                    gap: 30px; /* Masaüstünde ikonlar arasında daha fazla boşluk */
                 }
             }
         </style>
@@ -132,33 +145,43 @@
                 <!-- Resim -->
                 <img src="images/logo.jpg" alt="Logo">
                 <address>
-                    MNGroup, müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən bir turizm şirkətidir. <br>
-                    Bizim üçün ən önəmli olan, müştərilərimizin rahatlığı və məmnuniyyətidir. <br>
-                    Təcrübəli komandamızla, səyahətlərinizi asan və rahat etmək üçün daim yanınızdayıq. <br>
-                    Daha ətraflı məlumat üçün aşağıdan WhatsApp, Instagram və TikTok hesablarımızdan bizimlə əlaqə saxlaya bilərsiniz.
+                    MNGroup <br>
+                    Müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən <br>
+                    bir turizm şirkətidir. Bizim üçün ən önəmli olan, müştərilərimizin <br>
+                    rahatlığı və məmnuniyyətidir. Təcrübəli komandamızla, səyahətlərinizi <br>
+                    asan və rahat etmək üçün daim yanınızdayıq. Daha ətraflı məlumat <br>
+                    üçün aşağıdan WhatsApp,Instagram və TikTok hesablarımızdan bizimlə <br>
+                    əlaqə saxlaya bilərsiniz.
                 </address>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/mn_._group/" target="_blank">
+                    <img src="images/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@mn_._group" target="_blank">
+                    <img src="images/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://wa.me/994602011191" target="_blank">
+                    <img src="images/vplogo.png" alt="WhatsApp">
+                </a>
             </div>
         </div>
         <!--==============================footer=================================-->
         <footer>
             <div class="container_12">
                 <div class="grid_12">
-                    <div class="socials">
-                        <a href="https://www.instagram.com/mn_._group/" target="_blank">
-                            <img src="images/insta.png" alt="Instagram">
-                        </a>
-                        <a href="https://www.tiktok.com/@mn_._group" target="_blank">
-                            <img src="images/tiktok.png" alt="TikTok">
-                        </a>
-                        <a href="https://wa.me/994602011191" target="_blank">
-                            <img src="images/vplogo.png" alt="WhatsApp">
-                        </a>
-                    </div>
                     <div class="copy">
                         MNGROUP 2025 | <a href="omer-dev.site">Bütün Hüquqlar qorunur</a>
                     </div>
                 </div>
             </div>
         </footer>
+        <script>
+        $(function () {
+            $('#bookingForm').bookingForm({
+                ownerEmail: '#'
+            });
+        });
+        </script>
     </body>
 </html>

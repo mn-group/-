@@ -1,179 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Əlaqə</title>
-        <meta charset="utf-8">
-        <meta name="format-detection" content="telephone=no" />
-        <link rel="icon" href="images/favicon.ico">
-        <link rel="shortcut icon" href="images/favicon.ico" />
-        <link rel="stylesheet" href="css/form.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery-migrate-1.2.1.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/TMForm.js"></script>
-        <script src="js/superfish.js"></script>
-        <script src="js/jquery.ui.totop.js"></script>
-        <script src="js/jquery.equalheights.js"></script>
-        <script src="js/jquery.mobilemenu.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script>
-        $(document).ready(function(){
-            $().UItoTop({ easingType: 'easeOutQuart' });
-        });
-        </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <style>
-            /* Genel içerik düzeni */
-            .content {
-                text-align: center;
-                margin-top: 20px;
-                padding: 10px;
+<head>
+    <title>Əlaqə</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script>
+    $(document).ready(function () {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Genel içerik düzeni */
+        .content {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        /* Container for text and image */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Yazı hizalaması */
+        .map address {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: left; /* Align text to the left */
+            margin: 0 auto;
+            padding: 0 40px; /* Mobile spacing */
+            max-width: 600px; /* Limit the width */
+            color: #333; /* Text color */
+        }
+
+        /* Resim */
+        .map img {
+            max-width: 300px;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        /* Sosyal medya ikonları */
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .socials a img {
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s ease; /* Smooth hover effect */
+        }
+        .socials a img:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            filter: brightness(1.2); /* Make it brighter */
+        }
+
+        /* Footer */
+        footer .copy {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+        }
+        footer .copy a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 767px) {
+            .contact-container {
+                flex-direction: column; /* Dikey hizalama */
+                align-items: center; /* Ortaya hizalama */
             }
 
-            /* Resim için */
             .map img {
-                max-width: 300px;
-                height: auto;
-                margin: 20px auto;
-                display: block;
+                max-width: 80%; /* Mobilde logo boyutunu genişlet */
+                margin: 0 auto 20px; /* Alt boşluk ekle */
             }
 
-            /* Adres kısmı */
             .map address {
-                font-size: 16px;
-                line-height: 1.8;
-                text-align: center;
-                margin: 80px;
-                padding: 0 50px;
-                max-width: 700px;
+                font-size: 14px; /* Daha küçük yazı boyutu */
+                line-height: 1.5;
+                text-align: center; /* Yazıları ortaya hizala */
+                padding: 0 15px; /* Kenar boşluklarını azalt */
             }
-
-            /* Masaüstü için yazıyı tam ortalama */
-            @media (min-width: 768px) {
-                .map address {
-                    text-align: center; /* Yazıyı ortaya hizala */
-                    margin-top: 10px; /* Fotoğraf altına biraz boşluk */
-                    margin-left: center; /* Ortalamak için */
-                    margin-right: center; /* Ortalamak için */
-                }
-            }
-
-            /* Sosyal medya ikonları */
-            .socials {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                margin-top: 20px;
-            }
-
-            .socials a img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%; /* Yuvarlatılmış ikonlar */
-                box-shadow: none; /* Arka plan gölgelerini kaldır */
-                transition: all 0.3s ease; /* Smooth hover efekti */
-                border: none; /* Çerçeveyi kaldır */
-            }
-
-            .socials a img:hover {
-                transform: scale(1.1); /* Hafif büyütme efekti */
-                filter: brightness(1.2); /* Daha parlak görünüm */
-            }
-
-            /* Mobil uyumlu tasarım */
-            @media (max-width: 767px) {
-                .content {
-                    text-align: center;
-                    margin-top: 50px;
-                }
-                .map img {
-                    max-width: 90%; /* Mobilde daha geniş görünmesi için */
-                }
-                .map address {
-                    font-size: 14px; /* Mobilde daha küçük metin */
-                    line-height: 1.5;
-                    padding: 0 15px;
-                }
-                .socials {
-                    gap: 15px; /* Mobilde ikonlar arasında daha az boşluk */
-                }
-                .socials a img {
-                    width: 40px; /* Mobilde daha küçük ikon boyutu */
-                    height: 40px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <!--==============================header=================================-->
-        <header>
-            <div class="container_12">
-                <div class="grid_12">
-                    <div class="menu_block">
-                        <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-                            <ul class="sf-menu">
-                                <li><a href="index.html">Ana Səhifə</a></li>
-                                <li><a href="index-1.html">Turlar</a></li>
-                                <li class="current"><a href="index-4.html">Haqqımızda</a></li>
-                            </ul>
-                        </nav>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="grid_12">
-                    <h1>
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="Sizin Xoşbəxt Ailəniz">
-                        </a>
-                    </h1>
+        }
+    </style>
+</head>
+<body>
+    <!--==============================header=================================-->
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="menu_block">
+                    <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+                        <ul class="sf-menu">
+                            <li><a href="index.html">Ana Səhifə</a></li>
+                            <li><a href="index-1.html">Turlar</a></li>
+                            <li class="current"><a href="index-4.html">Haqqımızda</a></li>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
                 </div>
             </div>
-        </header>
-        <!--==============================Content=================================-->
-        <div class="content">
-            <h3>Əlaqə Məlumatları</h3>
-            <div class="map">
-                <!-- Resim -->
-                <img src="images/logo.jpg" alt="Logo">
-                <address>
-                    MNGroup <br>
-                    Müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən bir <br>
-                    turizm şirkətidir. Bizim üçün ən önəmli olan, müştərilərimizin rahatlığı <br>
-                    və məmnuniyyətidir. Təcrübəli komandamızla, səyahətlərinizi <br>
-                    asan və rahat etmək üçün daim yanınızdayıq. Daha ətraflı məlumat <br>
-                    üçün aşağıdan WhatsApp, Instagram və TikTok hesablarımızdan <br>
-                    bizimlə əlaqə saxlaya bilərsiniz.
-                </address>
-            </div>
-            <div class="socials">
-                <a href="https://www.instagram.com/mn_._group/" target="_blank">
-                    <img src="images/insta.png" alt="Instagram">
-                </a>
-                <a href="https://www.tiktok.com/@mn_._group" target="_blank">
-                    <img src="images/tiktok.png" alt="TikTok">
-                </a>
-                <a href="https://wa.me/994602011191" target="_blank">
-                    <img src="images/vplogo.png" alt="WhatsApp">
-                </a>
+            <div class="grid_12">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Sizin Xoşbəxt Ailəniz">
+                    </a>
+                </h1>
             </div>
         </div>
-        <!--==============================footer=================================-->
-        <footer>
-            <div class="container_12">
-                <div class="grid_12">
-                    <div class="copy">
-                        MNGROUP 2025 | <a href="omer-dev.site">Bütün Hüquqlar qorunur</a>
-                    </div>
+    </header>
+
+    <!--==============================Content=================================-->
+    <div class="content">
+        <h3>Əlaqə Məlumatları</h3>
+        <div class="map">
+            <!-- Container for text and image -->
+            <div class="contact-container">
+                <!-- Image on the top (mobile düzen) -->
+                <img src="images/logo.jpg" alt="Logo">
+                <!-- Text below -->
+                <address>
+                    MNGroup, müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən <br>
+                    bir turizm şirkətidir. Bizim üçün ən önəmli olan, müştərilərimizin rahatlığı <br>
+                    və məmnuniyyətidir. Təcrübəli komandamızla, səyahətlərinizi asan və rahat <br>
+                    etmək üçün daim yanınızdayıq. Daha ətraflı məlumat üçün aşağıdan WhatsApp <br>
+                    Instagram və TikTok hesablarımızdan bizimlə əlaqə saxlaya bilərsiniz.<br>
+                </address>
+            </div>
+        </div>
+    </div>
+
+    <!--==============================footer=================================-->
+    <footer>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="socials">
+                    <a href="https://www.instagram.com/mn_._group/" target="_blank">
+                        <img src="images/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@mn_._group" target="_blank">
+                        <img src="images/tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://wa.me/994602011191" target="_blank">
+                        <img src="images/vplogo.png" alt="WhatsApp">
+                    </a>
+                </div>
+                <div class="copy">
+                    MNGROUP 2025 | <a href="omer-dev.site">Bütün Hüquqlar qorunur</a>
                 </div>
             </div>
-        </footer>
-        <script>
-        $(function () {
-            $('#bookingForm').bookingForm({
-                ownerEmail: '#'
-            });
-        });
-        </script>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>

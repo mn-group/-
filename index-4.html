@@ -67,11 +67,14 @@
         .socials a img {
             width: 50px;
             height: 50px;
-            transition: all 0.3s ease; /* Smooth hover effect */
+            border-radius: 50%; /* Yuvarlaqlaşdırma */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Kölgə */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hamar keçid */
+            object-fit: cover; /* Görüntünün düzgün uyğunlaşması */
         }
         .socials a img:hover {
-            transform: scale(1.1); /* Slight zoom effect */
-            filter: brightness(1.2); /* Make it brighter */
+            transform: scale(1.1); /* Böyütmə effekti */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.1); /* Daha dərin kölgə */
         }
 
         /* Footer */

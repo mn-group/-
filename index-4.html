@@ -23,28 +23,26 @@
         });
         </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!--[if lt IE 8]>
-        <div style=' clear: both; text-align:center; position: relative;'>
-            <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-                <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="Siz köhnəlmiş brauzerdən istifadə edirsiniz. Daha sürətli və təhlükəsiz bir təcrübə üçün pulsuz olaraq yeniləyin." />
-            </a>
-        </div>
-        <![endif]-->
-        <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <link rel="stylesheet" media="screen" href="css/ie.css">
-        <![endif]-->
         <style>
-            /* Styling the social media icons */
-            .socials a {
-                display: inline-block;
-                margin-right: 20px;
+            .content {
+                text-align: center;
+                margin-top: 0;
             }
-
-            .socials img {
-                width: 100%; /* Make the logos responsive */
-                max-width: 150px; /* Limit the maximum width */
-                height: auto; /* Maintain aspect ratio */
+            .map img {
+                max-width: 300px;
+                height: auto;
+                margin-bottom: 30px;
+            }
+            .socials a {
+                margin: 0 10px;
+            }
+            .map address {
+                font-size: 16px;
+                line-height: 1.5;
+                text-align: center; /* Yazıları ortala */
+                margin: 0 auto; /* Ortalamak için */
+                width: 80%; /* Genişliği sınırlamak için */
+                padding-left: 90px; /* Adresi sağa taşır */
             }
         </style>
     </head>
@@ -58,7 +56,7 @@
                             <ul class="sf-menu">
                                 <li><a href="index.html">Ana Səhifə</a></li>
                                 <li><a href="index-1.html">Turlar</a></li>
-                                <li class="current"><a href="index-4.html">Əlaqə</a></li>
+                                <li class="current"><a href="index-4.html">Haqqımızda</a></li>
                             </ul>
                         </nav>
                         <div class="clear"></div>
@@ -74,25 +72,20 @@
             </div>
         </header>
         <!--==============================Content=================================-->
-        <div class="content"><div class="ic">Daha çox veb sayt şablonları @ TemplateMonster.com - 10 Fevral 2014!</div>
-            <div class="container_12">
-                <div class="grid_5">
-                    <h3>ƏLAQƏ MƏLUMATI</h3>
-                    <div class="map">
-                        <div class="clear"></div>
-                        <figure class="">
-                            <img src="images/logo.jpg" alt="Map">
-                        </figure>
-                        <address>
-                            <dl>
-                                <dt>MNGroup<br>
-                                    Müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən bir turizm şirkətidir. Bizim üçün ən önəmli olan, müştərilərimizin rahatlığı və məmnuniyyətidir. Təcrübəli komandamızla, səyahətlərinizi asan və rahat etmək üçün daim yanınızdayıq.<br>
-                                </dt>
-                                <a href="https://www.instagram.com/mn_._group/" target="_blank">Əlavə məlumat üçün aşağıdan instaqram və ya tiktok hesablarımızdan bizimlə əlaqə saxlaya bilərsiniz.</a>
-                            </dl>
-                        </address>
-                    </div>
-                </div>
+        <div class="content">
+            <h3>Əlaqə Məlumatları</h3>
+            <div class="map">
+                <!-- Tək logo buradadır -->
+                <img src="images/logo.jpg" alt="Logo">
+                <address>
+                    MNGroup <br>
+                    Müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən bir <br>
+                    turizm şirkətidir. Bizim üçün ən önəmli olan, müştərilərimizin rahatlığı <br>
+                    və məmnuniyyətidir. Təcrübəli komandamızla, səyahətlərinizi <br>
+                    asan və rahat etmək üçün daim yanınızdayıq. Daha ətraflı məlumat <br>
+                    üçün aşağıdan WhatsApp, Instagram və TikTok hesablarımızdan <br>
+                    bizimlə əlaqə saxlaya bilərsiniz.
+                </address>
             </div>
         </div>
         <!--==============================footer=================================-->
@@ -100,25 +93,28 @@
             <div class="container_12">
                 <div class="grid_12">
                     <div class="socials">
-                        <a href="https://www.instagram.com/mn_._group/">
+                        <a href="https://www.instagram.com/mn_._group/" target="_blank">
                             <img src="images/insta.png" alt="Instagram">
                         </a>
-                        <a href="https://www.tiktok.com/@mn_._group" class="social-icon">
+                        <a href="https://www.tiktok.com/@mn_._group" target="_blank">
                             <img src="images/tiktok.png" alt="TikTok">
+                        </a>
+                        <a href="https://wa.me/994602011191" target="_blank">
+                            <img src="images/vplogo.png" alt="WhatsApp">
                         </a>
                     </div>
                     <div class="copy">
-                        MNGROUP 2025 | <a href="#">Bütün Hüquqlar qorunur</a>
+                        MNGROUP 2025 | <a href="omer-dev.site">Bütün Hüquqlar qorunur</a>
                     </div>
                 </div>
             </div>
         </footer>
         <script>
-        $(function (){
+        $(function () {
             $('#bookingForm').bookingForm({
                 ownerEmail: '#'
             });
-        })
+        });
         </script>
     </body>
 </html>

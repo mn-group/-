@@ -44,9 +44,19 @@
                 font-size: 16px;
                 line-height: 1.8;
                 text-align: center;
-                margin: 0 auto;
-                padding: 0 40px;
-                max-width: 600px;
+                margin: 80px;
+                padding: 0 50px;
+                max-width: 700px;
+            }
+
+            /* Masaüstü için yazıyı tam ortalama */
+            @media (min-width: 768px) {
+                .map address {
+                    text-align: center; /* Yazıyı ortaya hizala */
+                    margin-top: 10px; /* Fotoğraf altına biraz boşluk */
+                    margin-left: center; /* Ortalamak için */
+                    margin-right: center; /* Ortalamak için */
+                }
             }
 
             /* Sosyal medya ikonları */
@@ -93,24 +103,6 @@
                     height: 40px;
                 }
             }
-
-            /* Masaüstü için optimize tasarım */
-            @media (min-width: 768px) {
-                .map img {
-                    max-width: 400px;
-                }
-                .map address {
-                    font-size: 18px;
-                    padding: 0 15px;
-                }
-                .socials a img {
-                    width: 65px; /* Masaüstü ikon boyutu */
-                    height: 60px;
-                }
-                .socials {
-                    gap: 30px; /* Masaüstünde ikonlar arasında daha fazla boşluk */
-                }
-            }
         </style>
     </head>
     <body>
@@ -146,12 +138,12 @@
                 <img src="images/logo.jpg" alt="Logo">
                 <address>
                     MNGroup <br>
-                    Müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən <br>
-                    bir turizm şirkətidir. Bizim üçün ən önəmli olan, müştərilərimizin <br>
-                    rahatlığı və məmnuniyyətidir. Təcrübəli komandamızla, səyahətlərinizi <br>
+                    Müştərilərinə ən sərfəli qiymətlərlə uçuş biletləri təqdim edən bir <br>
+                    turizm şirkətidir. Bizim üçün ən önəmli olan, müştərilərimizin rahatlığı <br>
+                    və məmnuniyyətidir. Təcrübəli komandamızla, səyahətlərinizi <br>
                     asan və rahat etmək üçün daim yanınızdayıq. Daha ətraflı məlumat <br>
-                    üçün aşağıdan WhatsApp,Instagram və TikTok hesablarımızdan bizimlə <br>
-                    əlaqə saxlaya bilərsiniz.
+                    üçün aşağıdan WhatsApp, Instagram və TikTok hesablarımızdan <br>
+                    bizimlə əlaqə saxlaya bilərsiniz.
                 </address>
             </div>
             <div class="socials">
